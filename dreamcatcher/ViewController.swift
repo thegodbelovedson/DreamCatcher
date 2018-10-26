@@ -35,16 +35,19 @@ class ViewController: UIViewController {
             !username.isEmpty,
             !pass.isEmpty{
             
-            self.performSegue(withIdentifier: "homeSegue", sender: nil)
+            //            ini dugunakan pakai segue kalau mau passing parameter berarti harus bikin tanda nyambung type: i
+//            self.performSegue(withIdentifier: "homeSegue", sender: nil)
             
 //            kalau mau hilangin seguenya
-//            let homeViewController = HomeViewController()
-//            let navigationController = UINavigationController(rootViewController: homeViewController)
-//            self.navigationController?.pushViewController(navigationController, animated: true)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil) // init nama project ini sebagai home
+            if let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController { // ini untuk panggil homeviewcontroller ke dalam variabel dan variabelnya bisa dipakai function dan parameternnya
+                homeViewController.username = username
+                self.navigationController?.pushViewController(homeViewController, animated: true)// ini untuk perpindahan ke halamannya
+            }
         }
     }
     
-    
+    //    ini satu paket kalau pakai segue harusnya bisa pilih salah satu type: ii
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let viewconttroller = segue.destination as? HomeViewController{
             viewconttroller.username=usernameField.text

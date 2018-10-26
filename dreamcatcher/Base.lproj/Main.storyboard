@@ -71,7 +71,6 @@
                         <outlet property="headerLabel" destination="Ulo-Wt-tcf" id="Jic-71-GuP"/>
                         <outlet property="passwordField" destination="pmP-u3-iX8" id="uiE-Rb-m3Z"/>
                         <outlet property="usernameField" destination="J8g-Hr-SCY" id="NHB-o6-2OE"/>
-                        <segue destination="BlT-eM-kpb" kind="show" identifier="homeSegue" id="pyL-ef-cJd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -81,9 +80,9 @@
         <!--Home-->
         <scene sceneID="m5E-XY-vF6">
             <objects>
-                <viewController id="BlT-eM-kpb" customClass="HomeViewController" customModule="dreamcatcher" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BlT-eM-kpb" customClass="HomeViewController" customModule="dreamcatcher" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3h6-QP-ZsO" customClass="HomeView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyp-OB-BK0">

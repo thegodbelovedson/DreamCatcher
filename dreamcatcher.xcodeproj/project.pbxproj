@@ -43,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				E58731E221829E190075E094 /* dreamcatcher */,
-				E58731E121829E190075E094 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +52,7 @@
 				E58731E021829E190075E094 /* dreamcatcher.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		E58731E221829E190075E094 /* dreamcatcher */ = {
@@ -66,6 +66,7 @@
 				E58731EF21829E1C0075E094 /* Info.plist */,
 				E58731F52182A80F0075E094 /* SignupViewController.swift */,
 				E58731F72182B66C0075E094 /* HomeViewController.swift */,
+				E58731E121829E190075E094 /* Products */,
 			);
 			path = dreamcatcher;
 			sourceTree = "<group>";
